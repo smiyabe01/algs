@@ -4,7 +4,7 @@ public class BootStrap
 {
   private Double[] s;
   private int N = 0;
-  private double eps = 0.0001;
+  private double eps = 0.00001;
   private int MM = 0;
   private double ave = 0.;
   private double std_dev = 0.;
@@ -28,7 +28,8 @@ public class BootStrap
 
   public void boot()
   {
-    int N2 = N/2;
+//    int N2 = N/2;
+    int N2 = N/2+2;
     double old  = 0.;
     double diff = 1.;
     Random randomGenerator = new Random();
